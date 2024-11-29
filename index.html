@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a <span class="hidden" id="level">Strong</span> <br><span id="styleText">random password</span></h1>
+        <div class="display">
+            <input id="password" type="text" placeholder="Click the button for generate a password">
+            <img src="images/copy.png" id="copy" alt="copy">
+        </div>
+        <button class="btn">Generate Password</button>
+
+        <div class="length">
+
+            <label for="length">Password length:<span class="lengthValue">8</span></label>
+            <button class="length_buttons" id="decrease">-</button>
+            <input type="range" class="range" name="length" max="24" min="1" value="8"> 
+            <button class="length_buttons" id="increase">+</button>
+        </div>
+
+        <div class="options">
+
+        <p >Characters used: </p>
+
+            <label class="container2">
+                ABC
+                <input type="checkbox" id="upper" checked>
+                <span class="checkmark"></span>
+            </label>
+        
+            <label class="container2">
+                abc
+                <input type="checkbox" id="lower" checked>
+                <span class="checkmark"></span>
+            </label>
+        
+            <label class="container2">
+                123
+                <input type="checkbox" id="numbers" checked>
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="container2">
+                @#&
+                <input type="checkbox"  id="symbols">
+                <span class="checkmark"></span>
+            </label>
+        
+        </div>
+        
+
+    </div>
+</body>
+
+<script src="app.js"></script>
+</html>
